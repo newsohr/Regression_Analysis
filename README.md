@@ -74,6 +74,9 @@ In general, the whole model traning cycle is depicted by the diagram below. (Ada
 
 <img src="Model_training.png" width="600" height="400">
 
+### Tutorial Video
+The following link is a tutorial video explaining some details of the code:
+https://youtu.be/UkmgsGPump8.
 
 ## Contributing
 
