@@ -39,6 +39,12 @@ For example,
 pip install scikit-image
 ```
 
+If Google Colab is used, mount Google Drive to Google Colab using:
+  ```sh
+  from google.colab import drive
+  drive.mount('/content/drive')
+  ```
+
 
 ## Usage
 
