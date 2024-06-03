@@ -27,7 +27,7 @@ The cloud-free high-resolution Sentinel-2 image can complement the missing featu
 The project is built on the notebooks called _Colocating_S2_S3_images.ipynb_ and _Regression_analysis.ipynb_ linked to this GitHub. The _Colocating_S2_S3_images.ipynb_ notebook is used for importing and preprocessing the data. Once the data is prepared, _Regression_analysis.ipynb_ is feasible to run the analysis for different regression techniques.
 
 ### Fetching Data
-The original raw data for Sentinel-2 and Sentinel-3 imagery is available at the Copernicus Open access Hub of the European Space Agency (ESA) under: https://dataspace.copernicus.eu/. In this project, we use the 
+The original raw data for Sentinel-2 and Sentinel-3 imagery is available at the Copernicus Open Access Hub of the European Space Agency (ESA) under: https://dataspace.copernicus.eu/. In this project, we use the 
   
 ### Installation
 
@@ -57,10 +57,16 @@ foobar.singularize('phenomena')
 
  USAGE EXAMPLES -->
 
-The first _Colocating_S2_S3_images.ipynb_ notebook is composed of step-by-step instructions of colocating Sentinel-2 and Sentinel-3 image, which including importing and preprocessing data, defining desired region for analysis, labeling Sentinel-2 image pixels and finding colocated Sentinel-3 image pixels using KDTree.
+The first _Colocating_S2_S3_images.ipynb_ notebook is composed of step-by-step instructions for colocating Sentinel-2 and Sentinel-3 images, which includes importing and preprocessing data, defining desired region for analysis, labelling Sentinel-2 image pixels and finding colocated Sentinel-3 image pixels using KDTree.
 
-The second notebook _Regression_analysis.ipynb_ implementing the three different regression techniques after splitting data into training and testing sets. The predicted models are visualized on the Sentinel-3 OLCI images and the sample points are plotted to compare their performance. Finally, a referencing melt pond fraction product is visualized to compare with the predicted model.
+This links to an illustration of KDTree 
+https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/_images/KDtree.png
 
+The second notebook _Regression_analysis.ipynb_ implements the three different regression techniques after splitting data into training and testing sets. The predicted models are visualized on the Sentinel-3 OLCI images and the sample points are plotted to compare their performance. Finally, a referencing melt pond fraction product is visualized to compare with the predicted model.
+
+In general, the whole model traning cycle is depicted by the diagram below. (Adapted from GEOL0069 week 9 assignment)
+
+<img src="Model_training.png" width="600" height="400">
 
 
 ## Contributing
@@ -78,12 +84,6 @@ Distributed under the [MIT](https://choosealicense.com/licenses/mit/) License.
 ## Contact
 
 Rhoswen - rhoswen.zeng.20@ucl.ac.uk
-
-Project Link: https://github.com/newsohr/GEOL0069
-
-## Acknowledgments
-
-* []() The input ESA official data is fetched using Google Earth Engine.
 
 
 ## Reference
